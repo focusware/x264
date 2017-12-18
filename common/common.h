@@ -346,6 +346,8 @@ struct x264_t
     /* mv/ref/mode cost arrays. */
     uint16_t *cost_mv[QP_MAX+1];
     uint16_t *cost_mv_fpel[QP_MAX+1][4];
+    uint16_t *p_cost_mv[QP_MAX+1];
+    uint16_t *p_cost_mv_fpel[QP_MAX+1][4];
     struct
     {
         uint16_t ref[QP_MAX+1][3][33];
